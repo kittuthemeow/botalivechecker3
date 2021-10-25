@@ -47,7 +47,7 @@ async def main_pratheek():
                         await asyncio.sleep(e.x)            
                 time = datetime.datetime.now(pytz.timezone(f"{TIME_ZONE}"))
                 last_update = time.strftime(f"%d %b %Y at %I:%M %p")
-                xxx_pratheek += f"\n\n✔️ Last checked on: {last_update} ({TIME_ZONE})\n\n<i>♻️ Updates every 45min</i> - Made By [Dᴇᴠᴏʟᴏᴘᴇʀ🥀](https://t.me/Kittu_the_criminal) 💙"
+                xxx_pratheek += f"\n\n✔️ Last checked on: {last_update} ({TIME_ZONE})\n\n<i>♻️ Updates every 45min</i> -"
                 await app.edit_message_text(int(CHANNEL_OR_GROUP_ID), MESSAGE_ID, xxx_pratheek)
                 print(f"Last checked on: {last_update}")                
                 await asyncio.sleep(2700)
