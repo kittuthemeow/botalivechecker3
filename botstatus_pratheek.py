@@ -36,7 +36,7 @@ async def main_pratheek():
                             xxx_pratheek += f"\n\n🤖 **BOT**: @{bot}\n🔴 **STATUS**: down ❌"
                             for bot_admin_id in BOT_ADMIN_IDS:
                                 try:
-                                    await app.send_message(int(bot_admin_id), f"🚨 **Beep! Beep!! @{bot} is down** ❌")
+                                    await app.send_message(int(bot_admin_id), f"🚨 **Beep! Beep!! @{bot} is down bot sethu pochu ena nu parunga 🥺** ❌")
                                 except Exception:
                                     pass
                             await app.read_history(bot)
@@ -47,9 +47,9 @@ async def main_pratheek():
                         await asyncio.sleep(e.x)            
                 time = datetime.datetime.now(pytz.timezone(f"{TIME_ZONE}"))
                 last_update = time.strftime(f"%d %b %Y at %I:%M %p")
-                xxx_pratheek += f"\n\n✔️ Last checked on: {last_update} ({TIME_ZONE})\n\n<i>♻️ Updates every 20min</i> -"
+                xxx_pratheek += f"\n\n✔️ Last checked on: {last_update} ({TIME_ZONE})\n\n<i>♻️ Updates every 1hour powered by kdl family</i> -"
                 await app.edit_message_text(int(CHANNEL_OR_GROUP_ID), MESSAGE_ID, xxx_pratheek)
                 print(f"Last checked on: {last_update}")                
-                await asyncio.sleep(1200)
+                await asyncio.sleep(3600)
                         
 app.run(main_pratheek())
